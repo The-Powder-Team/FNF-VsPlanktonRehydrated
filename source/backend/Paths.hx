@@ -248,7 +248,8 @@ class Paths
 			if(retVal != null) return retVal;
 		}
 
-		trace('oh no its returning null NOOOO ($file) (' + posInfos.fileName + ', ' + posInfos.lineNumber + ')');
+		trace('Image with key "$key" could not be found' + (library == null ? '' : ' in the library "$library"') + '! ' + '(${posInfos.fileName}, ${posInfos.lineNumber})');
+		
 		return null;
 	}
 
