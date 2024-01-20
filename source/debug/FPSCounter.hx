@@ -4,18 +4,15 @@ import flixel.FlxG;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
 import openfl.system.System;
-
 /**
 	The FPS class provides an easy-to-use monitor to display
 	the current frame rate of an OpenFL project
 **/
-class FPSCounter extends TextField
-{
+class FPSCounter extends TextField {
 	/**
 		The current frame rate, expressed using frames-per-second
 	**/
 	public var currentFPS(default, null):Int;
-
 	/**
 		The current memory usage (WARNING: this is NOT your total program memory usage, rather it shows the garbage collector memory)
 	**/
@@ -23,8 +20,7 @@ class FPSCounter extends TextField
 
 	@:noCompletion private var times:Array<Float>;
 
-	public function new(x:Float = 10, y:Float = 10, color:Int = 0x000000)
-	{
+	public function new(x:Float = 10, y:Float = 10, color:Int = 0x000000) {
 		super();
 
 		this.x = x;
@@ -33,7 +29,7 @@ class FPSCounter extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 14, color);
 		autoSize = LEFT;
 		multiline = true;
 		text = "FPS: ";
@@ -44,10 +40,9 @@ class FPSCounter extends TextField
 	var deltaTimeout:Float = 0.0;
 
 	// Event Handlers
-	private override function __enterFrame(deltaTime:Float):Void
-	{
+	private override function __enterFrame(deltaTime:Float):Void {
 		// prevents the overlay from updating every frame, why would you need to anyways
-		if (deltaTimeout > 1000) {
+		if(deltaTimeout > 1000) {
 			deltaTimeout = 0.0;
 			return;
 		}
@@ -61,13 +56,15 @@ class FPSCounter extends TextField
 		deltaTimeout += deltaTime;
 	}
 
-	public dynamic function updateText():Void { // so people can override it in hscript
+	public dynamic function updateText():Void { // so people can override it in hscript :)
 		text = 'FPS: ${currentFPS}'
 		+ '\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}';
 
+		text += '\nPsych Engine 0.7.3 [CUSTOM BUILD]'; 
+		text += '\nPlan F For Funkin\': Rehydrated DEMO';
+
 		textColor = 0xFFFFFFFF;
-		if (currentFPS < FlxG.drawFramerate * 0.5)
-			textColor = 0xFFFF0000;
+		if(currentFPS < FlxG.drawFramerate * 0.5) textColor = 0xFFFF0000;
 	}
 
 	inline function get_memoryMegas():Float
