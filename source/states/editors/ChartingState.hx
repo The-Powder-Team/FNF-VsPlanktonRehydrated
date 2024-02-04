@@ -1440,7 +1440,7 @@ class ChartingState extends MusicBeatState
 		try
 		{
 			var oppVocals = Paths.voices(currentSongName, (characterData.vocalsP2 == null || characterData.vocalsP2.length < 1) ? 'Opponent' : characterData.vocalsP2);
-			if(oppVocals != null && oppVocals.length > 0) opponentVocals.loadEmbedded(oppVocals);
+			if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
 		}
 		opponentVocals.autoDestroy = false;
 		FlxG.sound.list.add(opponentVocals);
