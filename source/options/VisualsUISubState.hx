@@ -61,7 +61,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		}
 
 		var option:Option = new Option('Note Splash Opacity',
-			'How much transparent should the Note Splashes be.',
+			'How much transparency should the Note Splashes be?',
 			'splashAlpha',
 			'percent');
 		option.scrollSpeed = 1.6;
@@ -72,7 +72,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Hide HUD',
-			'If checked, hides most HUD elements.',
+			'If checked, hides most HUD elements.\nNot the strums or notes though.',
 			'hideHud',
 			'bool');
 		addOption(option);
@@ -84,7 +84,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 
-		var option:Option = new Option('Icon Colored Health Bar',
+		var option:Option = new Option('Icon Based Health Colors',
 		"If unchecked, the health bar will have the colors from Vanilla FNF\nrather than colors based on the icons.",
 		'coloredHealthBar',
 		'bool');
@@ -114,7 +114,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Health Bar Opacity',
-			'How much transparent should the health bar and icons be.',
+			'How much transparency should the health bar and icons be?',
 			'healthBarAlpha',
 			'percent');
 		option.scrollSpeed = 1.6;
@@ -126,7 +126,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		
 		#if !mobile
 		var option:Option = new Option('FPS Counter',
-			'If unchecked, hides FPS Counter.',
+			'If unchecked, hides the FPS Counter.',
 			'showFPS',
 			'bool');
 		addOption(option);
@@ -157,14 +157,14 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		#if DISCORD_ALLOWED
 		var option:Option = new Option('Discord Rich Presence',
-			"Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",
+			"Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord.",
 			'discordRPC',
 			'bool');
 		addOption(option);
 		#end
 
 		var option:Option = new Option('Combo Stacking',
-			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",
+			"If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read.",
 			'comboStacking',
 			'bool');
 		addOption(option);

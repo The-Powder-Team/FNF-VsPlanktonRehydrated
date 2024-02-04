@@ -167,7 +167,7 @@ class PlayState extends MusicBeatState
 	public var camZoomingDecay:Float = 1;
 	private var curSong:String = "";
 
-	public var lane:FlxSprite;
+	//public var lane:FlxSprite;
 
 	public var gfSpeed:Int = 1;
 	public var health(default, set):Float = 1;
@@ -264,7 +264,6 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		//trace('Playback Rate: ' + playbackRate);
 		Paths.clearStoredMemory();
 
 		startCallback = startCountdown;
@@ -463,8 +462,8 @@ class PlayState extends MusicBeatState
 		}
 		stagesFunc(function(stage:BaseStage) stage.createPost());
 
-		if(ClientPrefs.data.laneUnderlay > 0){
-		    for(i in 0...2)
+		/*if (ClientPrefs.data.laneUnderlay > 0) {
+		    for (i in 0...2)
 		    {
 				lane = new FlxSprite(42 + 50 + (FlxG.width / 2 * i) - 10, 0).makeGraphic(Std.int(42 + Note.swagWidth * 3 + 90), FlxG.height);
 				lane.color = FlxColor.BLACK;
@@ -473,8 +472,9 @@ class PlayState extends MusicBeatState
 				lane.cameras = [camHUD];
 			}
 		}
+
 		laneGroup = new FlxSpriteGroup();
-		add(laneGroup);
+		add(laneGroup);*/
 		comboGroup = new FlxSpriteGroup();
 		add(comboGroup);
 		noteGroup = new FlxTypedGroup<FlxBasic>();
@@ -585,7 +585,7 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.data.downScroll)
 			botplayTxt.y = timeBar.y - 78;
         
-		laneGroup.cameras = [camHUD];
+		//laneGroup.cameras = [camHUD];
 		uiGroup.cameras = [camHUD];
 		noteGroup.cameras = [camHUD];
 		comboGroup.cameras = [camHUD];
@@ -2459,7 +2459,7 @@ class PlayState extends MusicBeatState
 	public var showRating:Bool = true;
 
     // Stores Lane Objects in a Group
-    public var laneGroup:FlxTypedGroup<FlxBasic>;
+    //public var laneGroup:FlxTypedGroup<FlxBasic>;
 	// Stores Ratings and Combo Sprites in a group
 	public var comboGroup:FlxSpriteGroup;
 	// Stores HUD Objects in a Group
