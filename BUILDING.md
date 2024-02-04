@@ -11,7 +11,7 @@
 - (Windows-only) Microsoft Visual Studio Community
 - (Unix-Only) `g++` compiler
 - (Linux-only) VLC
-- Haxe (4.2.5 or greater)
+- Haxe (4.2.5+)
 
 ---
 
@@ -108,9 +108,9 @@ which will create the files inside of `FNF-PsychEngine/export/<platform>/bin`
 No, that is normal, when you compile flixel games for the first time, it usually takes around 5 to 10 minutes,
 it really depends on how powerful your hardware is
 
-### "I had an error saying that 'hxCodec' could not be found!"
+~~### "I had an error saying that 'hxCodec' could not be found!"~~
 
-Refer to Issue ShadowMario/FNF-PsychEngine#12770.
+~~Refer to Issue ShadowMario/FNF-PsychEngine#12770.~~
 
 ### "I had an error relating to g++ on Linux!"
 

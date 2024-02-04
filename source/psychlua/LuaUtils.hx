@@ -333,6 +333,9 @@ class LuaUtils
 			//case "texture_noaa" | "textureatlas_noaa" | "tex_noaa":
 				//spr.frames = AtlasFrameMaker.construct(image, null, true);
 
+			case 'aseprite' | 'jsoni8':
+				spr.frames = Paths.getAsepriteAtlas(image);
+
 			case "packer" | "packeratlas" | "pac":
 				spr.frames = Paths.getPackerAtlas(image);
 
@@ -410,6 +413,12 @@ class LuaUtils
 		return 'browser';
 		#elseif android
 		return 'android';
+		#elseif hl
+		return 'hashlink';
+		#elseif ios
+		return 'ios';
+		#elseif neko
+		return 'neko';
 		#elseif switch
 		return 'switch';
 		#else

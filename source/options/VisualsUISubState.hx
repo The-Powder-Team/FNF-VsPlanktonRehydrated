@@ -84,6 +84,12 @@ class VisualsUISubState extends BaseOptionsMenu
 			['Time Left', 'Time Elapsed', 'Song Name', 'Disabled']);
 		addOption(option);
 
+		var option:Option = new Option('Icon Colored Health Bar',
+		"If unchecked, the health bar will have the colors from Vanilla FNF\nrather than colors based on the icons.",
+		'coloredHealthBar',
+		'bool');
+	    addOption(option);
+
 		var option:Option = new Option('Flashing Lights',
 			"Uncheck this if you're sensitive to flashing lights!",
 			'flashing',
@@ -95,6 +101,11 @@ class VisualsUISubState extends BaseOptionsMenu
 			'camZooms',
 			'bool');
 		addOption(option);
+
+		var option:Option = new Option('Display MS Offset Every Hit', 
+		'If checked, the text with the note offset (in milliseconds) will appear near notes.',
+		'showMsText', 'bool');
+	    addOption(option);
 
 		var option:Option = new Option('Score Text Zoom on Hit',
 			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
@@ -120,6 +131,12 @@ class VisualsUISubState extends BaseOptionsMenu
 			'bool');
 		addOption(option);
 		option.onChange = onChangeFPSCounter;
+
+		var option:Option = new Option('Rainbow FPS', 
+		"If checked, makes the FPS have a chroma effect.\nSo Kade Engine, isn't it?", 
+		'fpsRainbow', 
+		'bool');
+		addOption(option);
 		#end
 		
 		var option:Option = new Option('Pause Screen Song:',

@@ -24,8 +24,8 @@ import backend.Mods;
 
 class Paths
 {
-	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
-	inline public static var VIDEO_EXT = "mp4";
+	inline public static final SOUND_EXT = #if web "mp3" #else "ogg" #end;
+	inline public static final VIDEO_EXT = "mp4";
 
 	public static function excludeAsset(key:String) {
 		if (!dumpExclusions.contains(key))
@@ -198,7 +198,7 @@ class Paths
 		return file;
 	}
 
-	inline static public function voices(song:String, postfix:String = null):Any
+	inline static public function voices(song:String, postfix:String = null):Sound
 	{
 		var songKey:String = '${formatToSongPath(song)}/Voices';
 		if(postfix != null) songKey += '-' + postfix;
@@ -207,7 +207,7 @@ class Paths
 		return voices;
 	}
 
-	inline static public function inst(song:String):Any
+	inline static public function inst(song:String):Sound
 	{
 		var songKey:String = '${formatToSongPath(song)}/Inst';
 		var inst = returnSound(null, songKey, 'songs');
@@ -258,14 +258,10 @@ class Paths
 		if(bitmap == null)
 		{
 			#if MODS_ALLOWED
-			if (FileSystem.exists(file))
-				bitmap = BitmapData.fromFile(file);
-			else
+			if (FileSystem.exists(file)) bitmap = BitmapData.fromFile(file);
+			#else
+			if (OpenFlAssets.exists(file, IMAGE)) bitmap = OpenFlAssets.getBitmapData(file);
 			#end
-			{
-				if (OpenFlAssets.exists(file, IMAGE))
-					bitmap = OpenFlAssets.getBitmapData(file);
-			}
 
 			if(bitmap == null) return null;
 		}

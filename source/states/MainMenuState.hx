@@ -9,6 +9,22 @@ import options.OptionsState;
 
 class MainMenuState extends MusicBeatState
 {
+	public static var quotes:Array<String> = [
+		#if html5
+		"You're on web. Why the FUCK are you on web? You can't get even decent easter eggs, bitch."
+		#else
+		"500+  Giftcards! (-charlescatyt)",
+		"bro became starfire from teen titans go (-ssdrive)",
+		"Damn how many fnf mods are ya'll making1?!?! (-bluevolon)",
+		"YOUR ARGUMENT, IS NOW INVALID! (-ssdrive)",
+		"real (-lightystarofficial)",
+		"i shat bed (-cyborghenrystickmin)",
+		"when did we start playing freeze tag (-vencerist)",
+		"Get briccedd (-cyborghenrystickmin)",
+		"I like starting a fire (-vencerist)"
+		#end
+	];
+
 	public static var psychEngineVersion:String = '0.7.3'; // This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
@@ -20,7 +36,7 @@ class MainMenuState extends MusicBeatState
 		#if MODS_ALLOWED 'mods', #end
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
+		//#if !switch 'donate', #end
 		'options'
 	];
 
@@ -87,14 +103,18 @@ class MainMenuState extends MusicBeatState
 			menuItem.screenCenter(X);
 		}
 
-		var psychVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+		var psychVer:FlxText = new FlxText(12, FlxG.height - 64, 0, "Psych Engine v" + psychEngineVersion, 12);
 		psychVer.scrollFactor.set();
 		psychVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(psychVer);
-		var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+		var fnfVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		fnfVer.scrollFactor.set();
 		fnfVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(fnfVer);
+		var quoteVer:FlxText = new FlxText(12, FlxG.height - 24, 0, quotes[Std.random(quotes.length)], 12);
+		quoteVer.scrollFactor.set();
+		quoteVer.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(quoteVer);
 		changeItem();
 
 		#if ACHIEVEMENTS_ALLOWED

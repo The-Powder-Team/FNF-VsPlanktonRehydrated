@@ -332,7 +332,7 @@ class ChartingState extends MusicBeatState
 		\nALT + Left Bracket / Right Bracket - Reset Song Playback Rate" +
 		#end
 		"\nHold Shift to move 4x faster
-		\nHold Control and click on an arrow to select it
+		\nRight Click on an arrow to select it
 		\nZ/X - Zoom in/out
 		\n
 		\nEsc - Test your chart inside Chart Editor
@@ -1440,7 +1440,7 @@ class ChartingState extends MusicBeatState
 		try
 		{
 			var oppVocals = Paths.voices(currentSongName, (characterData.vocalsP2 == null || characterData.vocalsP2.length < 1) ? 'Opponent' : characterData.vocalsP2);
-			if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
+			if(oppVocals != null && oppVocals.length > 0) opponentVocals.loadEmbedded(oppVocals);
 		}
 		opponentVocals.autoDestroy = false;
 		FlxG.sound.list.add(opponentVocals);
@@ -1753,11 +1753,7 @@ class ChartingState extends MusicBeatState
 				{
 					if (FlxG.mouse.overlaps(note))
 					{
-						if (FlxG.keys.pressed.CONTROL)
-						{
-							selectNote(note);
-						}
-						else if (FlxG.keys.pressed.ALT)
+						if (FlxG.keys.pressed.ALT)
 						{
 							selectNote(note);
 							curSelectedNote[3] = curNoteTypes[currentType];
@@ -1781,6 +1777,17 @@ class ChartingState extends MusicBeatState
 					FlxG.log.add('added note');
 					addNote();
 				}
+			}
+		}
+		else if (FlxG.mouse.justPressedRight)
+		{
+			if (FlxG.mouse.overlaps(curRenderedNotes))
+			{
+				curRenderedNotes.forEachAlive(function(note:Note) 
+				{
+					if (FlxG.mouse.overlaps(note))
+						selectNote(note);
+				});
 			}
 		}
 

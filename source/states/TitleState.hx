@@ -77,7 +77,7 @@ class TitleState extends MusicBeatState
 		#end
 		Mods.loadTopMod();
 
-		FlxG.fixedTimestep = false;
+		// FlxG.fixedTimestep = false;
 		FlxG.game.focusLostFramerate = 60;
 		FlxG.keys.preventDefaultKeys = [TAB];
 
@@ -115,8 +115,8 @@ class TitleState extends MusicBeatState
 		}
 		#end
 
-		if (!initialized && FlxG.save.data != null && FlxG.save.data.fullscreen)
-			FlxG.fullscreen = FlxG.save.data.fullscreen;
+		if (!initialized && FlxG.save.data != null && ClientPrefs.data.fullscreen)
+			FlxG.fullscreen = ClientPrefs.data.fullscreen;
 		if (FlxG.save.data.weekCompleted != null)
 			StoryMenuState.weekCompleted = FlxG.save.data.weekCompleted;
 
@@ -156,11 +156,6 @@ class TitleState extends MusicBeatState
 		{
 			if (gamepad.justPressed.START)
 				pressedEnter = true;
-
-			#if switch
-			if (gamepad.justPressed.B)
-				pressedEnter = true;
-			#end
 		}
 
 		if (initialized && !transitioning && skippedIntro)
@@ -499,12 +494,12 @@ class TitleState extends MusicBeatState
 						deleteTexts();
 					case 6:
 						#if PSYCH_WATERMARKS
-						createText(['Not associated', 'with'], -40);
+						createText(['Rest in Peace', 'Stephen'], -40);
 						#else
 						createText(['In association', 'with'], -40);
 						#end
 					case 8:
-						addMoreText('newgrounds', -40);
+						addMoreText('Hillenburg', -40);
 						createImage('newgrounds_logo', FlxG.height * 0.52, 0.8);
 					case 9:
 						deleteTexts();
@@ -516,9 +511,9 @@ class TitleState extends MusicBeatState
 					case 13:
 						deleteTexts();
 					case 14:
-						addMoreText('Friday');
+						addMoreText('Plan F');
 					case 15:
-						addMoreText('Night');
+						addMoreText('for');
 					case 16:
 						addMoreText('Funkin');
 					case 17:

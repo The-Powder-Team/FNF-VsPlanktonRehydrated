@@ -43,10 +43,16 @@ import states.LoadingState;
 import flxanimate.*;
 #end
 
+#if VIDEOS_ALLOWED
+import hxvlc.flixel.*;
+import hxvlc.openfl.*;
+#end
+
 //Flixel
 import flixel.sound.FlxSound;
 import flixel.FlxG;
 import flixel.FlxSprite;
+import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;

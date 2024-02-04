@@ -18,9 +18,14 @@ import states.TitleState;
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
 	public var splashAlpha:Float = 0.6;
+	public var fullscreen:Bool = false;
+	public var fpsRainbow:Bool = false; // kadedev
+	public var laneUnderlay:Float = 0;
+	public var coloredHealthBar = true;
+	public var showMsText:Bool = true;
 	public var lowQuality:Bool = false;
 	public var shaders:Bool = true;
-	public var cacheOnGPU:Bool = #if !switch false #else true #end; //From Stilic
+	public var cacheOnGPU:Bool = true; //From Stilic
 	public var framerate:Int = 60;
 	public var camZooms:Bool = true;
 	public var hideHud:Bool = false;
@@ -178,7 +183,7 @@ class ClientPrefs {
 		if(Main.fpsVar != null)
 			Main.fpsVar.visible = data.showFPS;
 
-		#if (!html5 && !switch)
+		#if (!html5)
 		FlxG.autoPause = ClientPrefs.data.autoPause;
 
 		if(FlxG.save.data.framerate == null) {

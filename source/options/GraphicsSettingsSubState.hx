@@ -33,6 +33,13 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 		addOption(option);
 		antialiasingOption = optionsArray.length-1;
 
+		var option:Option = new Option('Fullscreen',
+		 "If checked, makes the game cover the whole screen.\nIt's something most PC games have, so why not?", 
+		 'fullscreen', 
+		 'bool');
+		addOption(option);
+		option.onChange = onChangeFullscreen;
+
 		var option:Option = new Option('Shaders', //Name
 			"If unchecked, disables shaders.\nIt's used for some visual effects, and also CPU intensive for weaker PCs.", //Description
 			'shaders',
@@ -87,6 +94,11 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			FlxG.drawFramerate = ClientPrefs.data.framerate;
 			FlxG.updateFramerate = ClientPrefs.data.framerate;
 		}
+	}
+
+	public static function onChangeFullscreen()
+	{
+		FlxG.fullscreen = ClientPrefs.data.fullscreen;
 	}
 
 	override function changeSelection(change:Int = 0)
