@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="plankton new.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="plankton down0000" x="0" y="0" width="157" height="152" frameX="0" frameY="-9" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0001" x="0" y="0" width="157" height="152" frameX="0" frameY="-9" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0002" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0003" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0004" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0005" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0006" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0007" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0008" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0009" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0010" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0011" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0012" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton down0013" x="157" y="0" width="153" height="162" frameX="-1" frameY="0" frameWidth="157" frameHeight="162"/>
+	<SubTexture name="plankton idle0000" x="310" y="0" width="216" height="190" frameX="0" frameY="-13" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0001" x="310" y="0" width="216" height="190" frameX="0" frameY="-13" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0002" x="526" y="0" width="207" height="196" frameX="-5" frameY="-7" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0003" x="526" y="0" width="207" height="196" frameX="-5" frameY="-7" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0004" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0005" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0006" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0007" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0008" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0009" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0010" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0011" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0012" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton idle0013" x="733" y="0" width="199" height="205" frameX="-9" frameY="0" frameWidth="216" frameHeight="205"/>
+	<SubTexture name="plankton left0000" x="0" y="205" width="199" height="205" frameX="0" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0001" x="0" y="205" width="199" height="205" frameX="0" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0002" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0003" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0004" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0005" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0006" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0007" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0008" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0009" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0010" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0011" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0012" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton left0013" x="199" y="205" width="199" height="205" frameX="-6" frameY="0" frameWidth="205" frameHeight="205"/>
+	<SubTexture name="plankton right0000" x="398" y="205" width="204" height="205" frameX="0" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0001" x="398" y="205" width="204" height="205" frameX="0" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0002" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0003" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0004" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0005" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0006" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0007" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0008" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0009" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0010" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0011" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0012" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton right0013" x="602" y="205" width="204" height="205" frameX="-9" frameY="0" frameWidth="213" frameHeight="205"/>
+	<SubTexture name="plankton up0000" x="806" y="205" width="199" height="230"/>
+	<SubTexture name="plankton up0001" x="806" y="205" width="199" height="230"/>
+	<SubTexture name="plankton up0002" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0003" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0004" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0005" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0006" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0007" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0008" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0009" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0010" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0011" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0012" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+	<SubTexture name="plankton up0013" x="0" y="435" width="199" height="205" frameX="0" frameY="-23" frameWidth="199" frameHeight="230"/>
+</TextureAtlas>
